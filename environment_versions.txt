@@ -1,0 +1,39 @@
+Reference environment for the supplied RTX 3090 simulation outputs
+====================================================================
+
+This anonymized snapshot records the principal environment used for the
+10-seed simulation intermediary results. It complements the portable version
+ranges in requirements.txt; it is not intended to install NVIDIA drivers.
+
+Operating system
+----------------
+Ubuntu 22.04.3 LTS (x86_64)
+Linux kernel 5.15.0-136-generic
+
+GPU stack
+---------
+GPU: NVIDIA GeForce RTX 3090, 24 GB
+NVIDIA driver: 580.105.08
+CUDA version reported by nvidia-smi: 13.0
+
+Python and principal packages
+-----------------------------
+Python 3.10.20
+torch 2.12.1
+numpy 1.26.4
+pandas 2.3.3
+scipy 1.15.3
+scikit-learn 1.7.2
+optuna 3.6.2
+matplotlib 3.10.9
+joblib 1.5.3
+lightgbm 4.6.0
+colorama 0.4.6
+
+Reproducibility note
+--------------------
+Seeds are fixed in the experiment scripts, and the Optuna TPE samplers use
+fixed sampler seeds. Exact floating-point equality across GPU architectures,
+CUDA libraries, and PyTorch builds is not guaranteed for neural-network
+training. The separately supplied intermediary outputs permit exact
+regeneration of the paper's downstream tables and figures without retraining.

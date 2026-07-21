@@ -1,0 +1,4 @@
+Source page: https://www.spglobal.com/spdji/en/index-family/equity/us-equity/sp-sectors/#indices
+Retrieval date: 2024/08/10
+Local snapshot: AllETFSimpleRet 10yrs.csv
+Notes: S&P Global sector and S&P 500 price-return index series. The website provides a rolling recent-ten-year download, so this snapshot is needed for exact replication if redistribution is permitted.

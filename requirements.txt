@@ -1,0 +1,24 @@
+# Minimal portable requirements for the replication package.
+#
+# Notes:
+# - Python 3.10 was used for the reported runs.
+# - Install PyTorch following the official instructions if you need a specific
+#   CUDA build: https://pytorch.org/get-started/locally/
+# - The optional ONNX packages are only needed for the analysis/export branch
+#   enabled by `--analyze`.
+
+colorama>=0.4.5,<1
+feval>=0.0.2,<0.1
+joblib>=1.1,<2
+lightgbm>=4.0,<5
+matplotlib>=3.5,<4
+numpy>=1.24,<2
+optuna>=3.6,<4
+pandas>=2.0,<3
+scikit-learn>=1.1,<2
+scipy>=1.10,<2
+torch>=2.2,<3
+
+# Optional, only needed when running with --analyze:
+# onnx>=1.16,<2
+# onnx2torch>=1.5,<2
